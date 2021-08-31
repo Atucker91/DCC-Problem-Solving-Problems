@@ -81,7 +81,14 @@
     =add each element to the others 
     -if the sum during comparison is equal to target number stop the comparisons and return the indicies that match the number needed
 
-2.	Palindrome is a word, phrase, or sequence that reads the same backward as forward i.e. madam. Write code that takes a user input and checks to see if it is a Palindrome and reports the result. You must handle spaces. 
+2.	Palindrome is a word, phrase, or sequence that reads the same backward as forward i.e. madam. 
+    Write code that takes a user input and checks to see if it is a Palindrome and reports the result. 
+    You must handle spaces. 
+
+    -take in users string
+    -create new string as a place holder for string to become backwards
+    -loop to look at each element of users string but starting from the end
+    -put each element into new string, once complete compare both strings, if not equal, not palindrome
 
 3.	Given a list of integers, return a bool that represents whether or not all integers in the list can form a sequence of incrementing integers
     a.	Use case: 

@@ -156,23 +156,46 @@
 //////////////////////  Target sum from two array elements  ///////////////////////////
 
 
-let array = [5, 17, 77, 50];
-let targetNum = 55;
+// let array = [5, 17, 77, 50];
+// let targetNum = 55;
 
-console.log(targetToHit(array, targetNum));
+// console.log(targetToHit(array, targetNum));
 
-function targetToHit(array, num) {
-    let solutionArray = [];
+// function targetToHit(array, num) {
+//     let solutionArray = [];
 
-    for (let i = 0; i < array.length; i++) {
-        for (let j = 0; j < array.length; j++) {
-            if (array[i] + array[j] == num && i != j) {
-                solutionArray.push(array[i]);
-                solutionArray.push(array[j]);
-                return solutionArray;
-            }
-        }
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = 0; j < array.length; j++) {
+//             if (array[i] + array[j] == num && i != j) {
+//                 solutionArray.push(array[i]);
+//                 solutionArray.push(array[j]);
+//                 return solutionArray;
+//             }
+//         }
+//     }
+//     return solutionArray;
+// }
+
+
+//////////////////////  Palindrome  ///////////////////////////
+
+
+let userString = prompt("Enter string to check if palindrome:");
+
+checkIfPalindrome(userString);
+
+function checkIfPalindrome(userInput) {
+    let newString = "";
+
+    for (let i = userInput.length - 1; i >= 0; i--) {
+        newString += userInput[i];
     }
-    return solutionArray;
+
+    if (newString === userInput) {
+        console.log("This is a palindrome");
+    }
+    else {
+        console.log("Not a palindrome");
+    }
 }
 
