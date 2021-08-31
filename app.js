@@ -27,15 +27,20 @@ console.log(capatilizeString(userInput));
 
 function capatilizeString(userString) {
 
+    let newString = "";
+
     for (let i = 0; i < userString.length; i++) {
         if (userString[i] == userString[0]) {
-            //change to upper case
+            newString += userString[i].toUpperCase();
         }
         else if (userString[i - 1] == " ") {
-            //change to upper case
+            newString += userString[i].toUpperCase();
+        }
+        else {
+            newString += userString[i];
         }
     }
 
-    return userString;
+    return newString;
 }
 
