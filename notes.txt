@@ -71,10 +71,15 @@
     -use the two elements before to determine current iteration number
 
 
-1.	Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice.
+1.	Given an array of integers, return indices of the two numbers such that they add up to a specific target. 
+    You may assume that each input would have exactly one solution, and you may not use the same element twice.
     a.	Use Case:
         i.	Given numbers in an array: [5, 17, 77, 50] 
         ii.	Target: 55
+
+    -nested loop to compare each element to each other
+    =add each element to the others 
+    -if the sum during comparison is equal to target number stop the comparisons and return the indicies that match the number needed
 
 2.	Palindrome is a word, phrase, or sequence that reads the same backward as forward i.e. madam. Write code that takes a user input and checks to see if it is a Palindrome and reports the result. You must handle spaces. 
 
