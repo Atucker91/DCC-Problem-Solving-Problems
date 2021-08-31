@@ -48,27 +48,60 @@
 ////////////////////// Compress String ///////////////////////////
 
 
-let inputString = "aaabbbbbccccaacccbbbaaabbbaaa";
+// let inputString = "aaabbbbbccccaacccbbbaaabbbaaa";
 
-console.log(compressString(inputString));
+// console.log(compressString(inputString));
 
-function compressString(userString) {
+// function compressString(userString) {
 
-    let compressedString = "";
+//     let compressedString = "";
+//     let count = 0;
+
+//     for (let i = 0; i < userString.length; i++) {
+//         if (userString[i] == userString[i + 1]) {
+//             count++;
+//         }
+//         else if (userString[i] != userString[i + 1]) {
+//             count++
+//             compressString += count + userString[i];
+//             count = 0;
+//         }
+//     }
+
+//     return compressString;
+// }
+
+
+////////////////////// Happy Numbers ///////////////////////////
+
+
+let numToCheck = prompt("Enter number to determine if happy:");
+
+happyNumber(numToCheck);
+
+function happyNumber(startingNum) {
+
+    let arrayStartingNum = startingNum.toString().split("");
+    let sum = 0;
     let count = 0;
 
-    for (let i = 0; i < userString.length; i++) {
-        if (userString[i] == userString[i + 1]) {
-            count++;
+    while (sum != 1 && startingNum != 1) {
+
+        sum = 0;
+
+        for (let i = 0; i < arrayStartingNum.length; i++) {
+
+            sum += arrayStartingNum[i] * arrayStartingNum[i];
         }
-        else if (userString[i] != userString[i + 1]) {
-            count++
-            compressString += count + userString[i];
-            count = 0;
+
+        arrayStartingNum = sum.toString().split("");
+        count++;
+
+        if (sum == startingNum || count == 10) {
+            return console.log("Number is not Happy");
         }
     }
 
-    return compressString;
+    return console.log("Number is Happy");
+
 }
-
-
