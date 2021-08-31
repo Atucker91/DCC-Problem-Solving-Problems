@@ -50,9 +50,18 @@
     a.	A prime number is a number that is only divisible by one and itself.
     b.	Write a method that prints out all prime numbers between 1 and 100 
 
+    -loop 100 times to check each number to see if prime
+    -start at 2 to bypass 1
+    -each loop iteration should check the value of count by if it is only divisible by 1 and itself. 
+    -use nested loop to check if it is divisible by any number from 1 to 100. 
+    -if it is only divisible by itself or 1, it is prime
+    -if not, it is not prime 
+
 
 
 3.	Fibonacci
     a.	A series of numbers in which each number (Fibonacci number) is the sum of the two preceding numbers. The simplest is the series 1, 1, 2, 3, 5, 8, etc.
     b.	Write a method that does the Fibonacci sequence starting at 1
     c.	HARDER VERSION: Write a method that does the Fibonacci sequence starting at a number that a user inputs
+
+    -

@@ -75,33 +75,57 @@
 ////////////////////// Happy Numbers ///////////////////////////
 
 
-let numToCheck = prompt("Enter number to determine if happy:");
+// let numToCheck = prompt("Enter number to determine if happy:");
 
-happyNumber(numToCheck);
+// happyNumber(numToCheck);
 
-function happyNumber(startingNum) {
+// function happyNumber(startingNum) {
 
-    let arrayStartingNum = startingNum.toString().split("");
-    let sum = 0;
-    let count = 0;
+//     let arrayStartingNum = startingNum.toString().split("");
+//     let sum = 0;
+//     let count = 0;
 
-    while (sum != 1 && startingNum != 1) {
+//     while (sum != 1 && startingNum != 1) {
 
-        sum = 0;
+//         sum = 0;
 
-        for (let i = 0; i < arrayStartingNum.length; i++) {
+//         for (let i = 0; i < arrayStartingNum.length; i++) {
 
-            sum += arrayStartingNum[i] * arrayStartingNum[i];
-        }
+//             sum += arrayStartingNum[i] * arrayStartingNum[i];
+//         }
 
-        arrayStartingNum = sum.toString().split("");
-        count++;
+//         arrayStartingNum = sum.toString().split("");
+//         count++;
 
-        if (sum == startingNum || count == 10) {
-            return console.log("Number is not Happy");
-        }
-    }
+//         if (sum == startingNum || count == 10) {
+//             return console.log("Number is not Happy");
+//         }
+//     }
 
-    return console.log("Number is Happy");
+//     return console.log("Number is Happy");
 
-}
+// }
+
+////////////////////// Happy Numbers ///////////////////////////
+
+
+// primeNumber();
+
+// function primeNumber() {
+
+//     for (let i = 2; i < 100; i++) {
+
+//         let primeBool = true;
+
+//         for (let j = 2; j < 100; j++) {
+//             if (i % j == 0 && i != j) {
+//                 primeBool = false;
+//             }
+//         }
+
+//         if (primeBool == true) {
+//             console.log(i + " Prime");
+//         }
+//     }
+// }
+
