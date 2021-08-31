@@ -1,0 +1,35 @@
+1.	Reverse a string
+    a.	Write code that takes a string as input and returns the string reversed
+    b.	i.e. “Hello” will be returned as “olleH”
+
+    -Take in user string 
+    -make new string to hold contenets of reversed outcome
+    -send each element of user stirng starting from the end one at a time to form contents of new string
+    -output new string that is reversed of user input string
+
+2.	Capitalize letter
+    a.	Write code that takes a string as input and capitalize the first letter of each word. Words will be separated by only one space. i.e. “hello world” should be outputted as “Hello World”
+
+    -Take in user stirng
+    -check elements of string to see if they are letters or spaces
+    -if starting letter, capitalize
+    -if letters after spaces, capitalize 
+    -output updated string
+
+3.	Compress a string of characters
+    a.	For example, an input of "aaabbbbbccccaacccbbbaaabbbaaa" would compress to "3a5b4c2a3c3b3a3b3a"
+
+    -count similar letters
+    -compare each string element to next element
+    -if same, keep counting. if diff, stop count and add count number to front of similar letters
+    -make new string for output of compression 
+    -add count and then letter that was counted to new string
+    -output new compressed string
+
+4.	BONUS CHALLENGE: Palindrome
+    a.	A word, phrase, or sequence that reads the same backward as forward i.e. madam
+    b.	Write code that takes a user input and checks to see if it is a Palindrome and reports the result
+
+    -create new string to hold reversed string of user input
+    -compare each element of user string with reversed string, or both strings as a whole 
+    -report findings of comparison, if any differ then not a palindrome
