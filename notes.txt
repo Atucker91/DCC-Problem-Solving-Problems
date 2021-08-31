@@ -64,4 +64,26 @@
     b.	Write a method that does the Fibonacci sequence starting at 1
     c.	HARDER VERSION: Write a method that does the Fibonacci sequence starting at a number that a user inputs
 
-    -
+    -create array to hold numbers
+    -user input will be first element of array
+    -use a loop to add numbers to array
+    -first loop iteration should automatically add the first number to the next element
+    -use the two elements before to determine current iteration number
+
+
+1.	Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice.
+    a.	Use Case:
+        i.	Given numbers in an array: [5, 17, 77, 50] 
+        ii.	Target: 55
+
+2.	Palindrome is a word, phrase, or sequence that reads the same backward as forward i.e. madam. Write code that takes a user input and checks to see if it is a Palindrome and reports the result. You must handle spaces. 
+
+3.	Given a list of integers, return a bool that represents whether or not all integers in the list can form a sequence of incrementing integers
+    a.	Use case: 
+        i.	{5, 7, 3, 8, 6}  false (no 4 to complete the sequence)
+        ii.	{17, 15, 20, 19, 21, 16, 18}  true
+
+4.	Create a method that takes an array of positive and negative numbers. Return an array where the first element is the count of the positive numbers and the second element is the sum of negative numbers. 
+    a.	Use case: [7, 9, -3, -32, 107, -1, 36, 95, -14, -99, 21]
+
+

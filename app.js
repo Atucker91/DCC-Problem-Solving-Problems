@@ -106,6 +106,7 @@
 
 // }
 
+
 ////////////////////// Happy Numbers ///////////////////////////
 
 
@@ -127,5 +128,28 @@
 //             console.log(i + " Prime");
 //         }
 //     }
+// }
+
+
+//////////////////////  Fibonacci ///////////////////////////
+
+
+
+// let fibArray = [0];
+
+// fibArray[0] = parseInt(prompt("Enter number for start of Fibonacci"));
+// console.log(fibonacci(fibArray));
+
+// function fibonacci(array) {
+//     for (let i = 0; i < 10; i++) {
+//         if (i == 0 || i == 1) {
+//             array[1] = array[0];
+//         }
+//         else {
+//             array[i] = array[i - 1] + array[i - 2];
+//         }
+//     }
+
+//     return array;
 // }
 
